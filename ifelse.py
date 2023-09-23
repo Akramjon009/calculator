@@ -1,7 +1,26 @@
 def ifsible(txt):
-    lis = ['-', '+', '/', '*', '(']
+    lis = ['-', '+', '/', '*']
     if not (txt[len(txt)-1] in lis):
         return True
+    else:
+        return False
+
+def ifsible_with_number(txt):
+    if len(txt) > 0:
+        if not (txt[len(txt)-1] == ')'):
+            return True
+        else:
+            return False
+    else:
+        return True
+
+def ifsible_with_number1(txt):
+    if len(txt) > 0:
+        lis = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '-', '*', '/']
+        if txt[len(txt)-1] in lis and txt != None:
+            return True
+        else:
+            return False
     else:
         return False
 

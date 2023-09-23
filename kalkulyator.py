@@ -15,7 +15,7 @@ class Calculyator(QWidget):
         super().__init__()
         self.txt = ''
         self.label = QLabel(self)
-        self.edit_count = QLineEdit('0')
+
 
         self.v_boxmenu = QVBoxLayout()
         self.v_box = QVBoxLayout()
@@ -104,44 +104,54 @@ class Calculyator(QWidget):
 
 
     def btn_bush(self):
-        self.txt += '0'
-        self.label.setText(self.txt)
+        if ifsible_with_number1(self.txt):
+            self.txt += '0'
+            self.label.setText(self.txt)
 
     def btn_bush1(self):
-        self.txt += '1'
-        self.label.setText(self.txt)
+        if ifsible_with_number(self.txt):
+            self.txt += '1'
+            self.label.setText(self.txt)
 
     def btn_bush2(self):
-        self.txt += '2'
-        self.label.setText(self.txt)
+        if ifsible_with_number(self.txt):
+            self.txt += '2'
+            self.label.setText(self.txt)
 
     def btn_bush3(self):
-        self.txt += '3'
-        self.label.setText(self.txt)
+        if ifsible_with_number(self.txt):
+            self.txt += '3'
+            self.label.setText(self.txt)
 
     def btn_bush4(self):
-        self.txt += '4'
-        self.label.setText(self.txt)
+        if ifsible_with_number(self.txt):
+            self.txt += '4'
+            self.label.setText(self.txt)
 
     def btn_bush5(self):
-        self.txt += '5'
-        self.label.setText(self.txt)
+        if ifsible_with_number(self.txt):
+            self.txt += '5'
+            self.label.setText(self.txt)
 
     def btn_bush6(self):
-        self.txt += '6'
-        self.label.setText(self.txt)
+        if ifsible_with_number(self.txt):
+            self.txt += '6'
+            self.label.setText(self.txt)
 
     def btn_bush7(self):
-        self.txt += '7'
-        self.label.setText(self.txt)
+        if ifsible_with_number(self.txt):
+            self.txt += '7'
+            self.label.setText(self.txt)
 
     def btn_bush8(self):
-        self.txt += '8'
-        self.label.setText(self.txt)
+        if ifsible_with_number(self.txt):
+            self.txt += '8'
+            self.label.setText(self.txt)
 
     def btn_bush9(self):
-        self.txt += '9'
-        self.label.setText(self.txt)
+        if ifsible_with_number(self.txt):
+            self.txt += '9'
+            self.label.setText(self.txt)
 
     def btn_mult(self):
         if ifbracket(self.txt) and ifsible(self.txt):
